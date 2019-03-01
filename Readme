@@ -1,1 +1,3 @@
 ###
+unrar multiple files to corresponding sub-directories
+for file in *.tar; do mkdir "${file%%.tar}"; tar -xvf "$file" -C "${file%%.tar}"; done
